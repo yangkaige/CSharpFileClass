@@ -1,7 +1,7 @@
 
 #  Create方法
 方法用于创建一个文件，并返回一个与该文件相关的一个流.
-#关于 ReadAllText,WriteAllText,ReadAllLines,WriteAllLines,ReadAllBytes,WriteAllBytes的小节
+# 关于 ReadAllText,WriteAllText,ReadAllLines,WriteAllLines,ReadAllBytes,WriteAllBytes的小节
 这几个方法ReadAllText,WriteAllText,ReadAllLines,WriteAllLines在读取或写入时都可以指定编码方式，编码方式
 可从Encoding这个抽象类中获取，而ReadAllBytes,WriteAllBytes在读取或写入时是以字节的方式进行的，所以就没有相关的
 重载方法来指定其编码方式；最后读取的方法在没有文件时会报异常，而写入方法则不会，它会自动创建一个新的文件。
